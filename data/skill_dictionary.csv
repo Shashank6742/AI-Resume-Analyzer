@@ -1,0 +1,42 @@
+skill,category
+Python,Programming
+JavaScript,Programming
+TypeScript,Programming
+HTML,Web & APIs
+CSS,Web & APIs
+SQL,Data & Databases
+Excel,Data & Databases
+Pandas,Data & Databases
+NumPy,Data & Databases
+MongoDB,Data & Databases
+Power BI,Tools & Visualization
+Tableau,Tools & Visualization
+Matplotlib,Tools & Visualization
+Machine Learning,AI & Machine Learning
+Artificial Intelligence,AI & Machine Learning
+Deep Learning,AI & Machine Learning
+Scikit-learn,AI & Machine Learning
+PyTorch,AI & Machine Learning
+TensorFlow,AI & Machine Learning
+NLP,AI & Machine Learning
+Transformers,AI & Machine Learning
+Hugging Face,AI & Machine Learning
+spaCy,AI & Machine Learning
+LLM,AI & Machine Learning
+RAG,AI & Machine Learning
+Computer Vision,AI & Machine Learning
+OpenCV,AI & Machine Learning
+CNN,AI & Machine Learning
+YOLO,AI & Machine Learning
+FastAPI,Web & APIs
+Flask,Web & APIs
+Django,Web & APIs
+REST API,Web & APIs
+APIs,Web & APIs
+Git,Tools & DevOps
+GitHub,Tools & DevOps
+Docker,Cloud & DevOps
+Kubernetes,Cloud & DevOps
+AWS,Cloud & DevOps
+Azure,Cloud & DevOps
+Linux,Cloud & DevOps
