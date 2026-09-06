@@ -1,14 +1,13 @@
-Test ID,Test Area,Test Case,Input,Expected Result,Actual Result,Status
-TC01,Resume Parsing,PDF resume text extraction,Valid PDF resume,Text should be extracted successfully,,
-TC02,Resume Parsing,DOCX resume text extraction,Valid DOCX resume,Text should be extracted successfully,,
-TC03,File Validation,Unsupported file format,TXT file,Application should reject the file,,
-TC04,Text Cleaning,Lowercase and space normalization,PYTHON SQL PANDAS,Text should become normalized lowercase text,,
-TC05,Skill Extraction,Recognize technical skills,Python SQL Pandas,Skills should be detected correctly,,
-TC06,Skill Extraction,Ignore unrelated words,Cooking Music Travel,No job-related skills should be detected,,
-TC07,Role Matching,Rank suitable role higher,Python SQL Pandas resume,Data Analyst should receive a strong relative match,,
-TC08,Role Matching,Return top 3 recommendations,Valid resume,Exactly 3 top roles should be displayed,,
-TC09,Skill Gap,Identify missing skills,Resume with Python but without SQL,SQL should appear in missing skills for Data Analyst,,
-TC10,Roadmap,Generate learning roadmap,Missing skills list,Weekly learning roadmap should be generated,,
-TC11,Score Consistency,Same resume analyzed twice,Same resume uploaded twice,Match scores should remain consistent,,
-TC12,Fairness,Non-job-related personal information,Resume containing photo age gender religion,Personal attributes should not affect skill-based matching,,
-TC13,Usability,Dashboard interaction,Valid resume upload,Results should be clearly displayed without errors,,
+Test Case,Module,Input,Expected Result,Actual Result,Status
+TC01,PDF Extraction,Valid PDF resume,Resume text extracted,Passed,PASS
+TC02,DOCX Extraction,Valid DOCX resume,Resume text extracted,Passed,PASS
+TC03,File Validation,TXT file,Unsupported format rejected,ValueError raised,PASS
+TC04,Text Cleaning,Python SQL Pandas with extra spaces,Normalized lowercase text,python sql pandas,PASS
+TC05,Skill Extraction,Python SQL Pandas,Skills detected,python sql pandas,PASS
+TC06,Skill Filtering,Cooking Music Travel,No technical skills detected,Empty list,PASS
+TC07,Role Matching,Python SQL Pandas,Relevant roles ranked,Data Analyst and AI/ML Intern top,PASS
+TC08,Top 3 Recommendations,Python SQL Pandas,Exactly 3 roles returned,3 roles returned,PASS
+TC09,Skill Gap,Python vs Data Analyst skills,Matched and missing skills identified,Correct matched and missing skills,PASS
+TC10,Learning Roadmap,SQL Pandas Power BI Tableau,Learning roadmap generated,2 weeks generated,PASS
+TC11,Score Consistency,Same resume analyzed twice,Same results returned,Results identical,PASS
+TC12,Fairness,Resume with personal attributes added,Personal attributes do not affect matching,Same results,PASS
